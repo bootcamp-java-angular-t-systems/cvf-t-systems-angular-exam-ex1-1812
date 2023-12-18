@@ -1,27 +1,42 @@
-# Moviedb
+# Nombre de tu Aplicación
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+PelisApp es una aplicación web que utiliza la API de The Movie Database (TMDb) para explorar y descubrir películas y series. Con secciones dedicadas a películas, series populares y una función de búsqueda, PelisApp ofrece una experiencia interactiva para los amantes del cine y la televisión. Cada elemento en la lista tiene un botón para mostrar detalles, proporcionando información detallada con un solo clic. ¡Explora, descubre y sumérgete en el mundo del entretenimiento con PelisApp! 
 
-## Development server
+## Tabla de Contenidos
+- [Demo](#demo)
+- [Características](#características)
+- [Instalación](#instalación)
+- [Configuración](#configuración)
+- [Uso](#uso)
+- [Contribuciones](#contribuciones)
+- [Licencia](#licencia)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Demo
+Puedes ver la demo de la aplicación [aquí](https://main.d1uaiwjqhjrf7k.amplifyapp.com/movies).
 
-## Code scaffolding
+## Características
+- Lista de películas.
+- Lista de series.
+- Lista de películas populares.
+- Búsqueda de películas y series.
+- Detalles de películas y series.
+- Botón para mostrar detalles de cada elemento.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación
+1. Clona el repositorio: `git clone https://github.com/bootcamp-java-angular-t-systems/`
+2. Instala las dependencias: `npm install`
 
-## Build
+## Configuración
+- Obtén una API Key de The Movie Database (TMDb) [aquí](https://www.themoviedb.org/settings/api).
+- Copia el archivo `.env.example` y renómbralo a `.env`.
+- Agrega tu API Key de TMDb al archivo `.env`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Uso
+1. Inicia la aplicación: `ns serve -o`
+2. Accede a la aplicación desde tu navegador: `http://localhost:4200`
 
-## Running unit tests
+## Contribuciones
+¡Contribuciones son bienvenidas! Si encuentras algún problema o tienes una mejora, por favor abre un issue o envía un pull request.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Licencia
+Este proyecto está bajo la [Licencia MIT](LICENSE).
