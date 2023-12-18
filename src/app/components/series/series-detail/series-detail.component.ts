@@ -26,6 +26,7 @@ export class SeriesDetailComponent {
   getMovieDetails(movieId: number) {
     this.moviesService.getSerieById(movieId).subscribe((data: any) => {
       console.log(data)
+      this.character.title = this.character.name;
       this.character = data;
       console.log(this.character)
   });

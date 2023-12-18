@@ -49,6 +49,7 @@ export class SeriesListComponent {
 
        data.results.forEach((result:any) => {
         result.newGenre = result.genre_ids.map((id:number) => genreMapping[id]);
+        result.title = result.name;
         console.log(result.newGenre)
       });
       this.movies = data.results;
