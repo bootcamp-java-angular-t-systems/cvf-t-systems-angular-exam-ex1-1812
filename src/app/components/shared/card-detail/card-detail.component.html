@@ -1,0 +1,19 @@
+<div class="card mt-4 d-flex flex-row p-3 p-md-5 m-4" style="width: 50rem;">
+    <img src="https://image.tmdb.org/t/p/w500/{{character.poster_path}}" class="card-img-top w-50 me-3" alt="{{ character.name }}" style="object-fit: contain;">
+    <div class="card-body w-75">
+      <h5 class="card-title">{{ character.title }}</h5>
+      <ul class="list-group list-group-flush mt-3">
+        <li class="list-group-item">Titulo original: {{ character.original_title }}</li>
+        <li class="list-group-item"><b>Generos:</b> 
+          @for (item of character.genres; track $index) {
+            {{item.name}}, 
+          }</li>
+          <li class="list-group-item"><b>Numero de votos:</b> {{ character.vote_count }}</li>
+          <li class="list-group-item"><b>Tagline:</b> {{ character.tagline }}</li>
+          <li class="list-group-item"><b>Overview:</b> {{ character.overview }}</li>
+          <li class="list-group-item"><b>Release date:</b> {{ character.release_date }}</li>
+          <li class="list-group-item"><b>Original Language:</b> {{ character.original_language}}</li>
+      </ul>
+      <a (click)="returnToList()" class="btn btn-warning mt-2 w-100">Return</a>
+    </div>
+</div>

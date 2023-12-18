@@ -1,0 +1,22 @@
+<div class="card mt-4" style="width: 18rem;">
+  @if (character.poster_path) {
+    <img src="https://image.tmdb.org/t/p/w500/{{character.poster_path}}" class="card-img-top" alt="{{character.title}}">
+
+  } @else {
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe-FGybwaf1Z8ywGLT1eaicLaoCbH1VRJt0np3E1UA9A&s" class="card-img-top" alt="{{character.title}}">
+  }
+    <div class="card-body">
+      <h5 class="card-title">{{ character.title }}</h5>
+      <li class="list-group-item"><b>Generos:</b> 
+        @for (item of character.newGenre; track $index) {
+          {{item}}, 
+        }</li>
+      <li class="list-group-item"><b>Numero de votos:</b> {{ character.vote_count }}</li>
+        <li class="list-group-item"><b>Overview:</b> {{ character.overview }}</li>
+        <li class="list-group-item"><b>Release date:</b> {{ character.release_date }}</li>
+        <li class="list-group-item"><b>Original Language:</b> {{ character.original_language}}</li>
+        @if (!router.url.includes('search')) {
+          <a (click)="seeMore()" class="btn btn-warning mt-2 w-100">See more</a>
+        }
+    </div>
+</div>
